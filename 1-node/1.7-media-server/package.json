@@ -1,0 +1,15 @@
+{
+  "name": "media-server",
+  "version": "1.0.0",
+  "description": "este proyecto simula un ssr en nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 99",
+    "start": "node index.js"
+  },
+  "author": "devf-montoyitag",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
