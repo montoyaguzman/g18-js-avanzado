@@ -1,10 +1,15 @@
-// localhost:8080 => JSON { message: "hola desde el index" } => 200
-// localhost:8080/patitos => JSON { data: [ { name: "donald"}, { name: "lucas"} ] } => 200
-// localhost:8080/pokemones => texto plano de not found => 404
-// localhost:8080/admin => 401 
+// PETICIONES
+// 200 OK
+// 201 Created
+// 204 No content
+// 401 Unatuhorized
+// 403 Forbidden
+// 404 Not found
+// 500 Internal server error
 
 const http = require('http');
 const url = require('url');
+const colors = require('colors');
 
 const server = http.createServer((request, response) => {
     // Paso 1: Obtener la path de la request
@@ -18,22 +23,27 @@ const server = http.createServer((request, response) => {
     let mimeType = { 'Content-Type' : 'application/json' };
 
     // Paso 3: (CONTROLLER) Manejador de las peticiones
-    if (path === '/') {
+    if (path === '/') { // 200
         // paso 3.1 conectarse a la bd y hacer la operacion real y obtener
         // resultados reales para el mensaje y el status
-        responseObj = { message: "hola desde el index" };
+        responseObj = { message: 'OK' };
         status = 200;
-    } else if (path === '/patitos') {
-        responseObj = { data: [ { name: "donald"}, { name: "lucas"} ] };
-        status = 200;
-    } else if (path === '/pokemones') {
-        responseObj = 'no encontrado';
-        mimeType = { 'Content-Type' : 'text/plain' };
-        status = 404;
-    } else if (path === '/admin') {
+    } else if (path === '/new-card') { // 201
+        responseObj = { message: 'Created' };
+        status = 201;
+    } else if (path === '/do-login') { // 204
+        responseObj = {};
+        status = 204;
+    } else if (path === '/delete-admin') { // 401
         responseObj = {};
         status = 401;
-    } else {
+    } else if (path === '/modify-admin') { // 403
+        responseObj = {};
+        status = 403;
+    } else if (path === '/loquesea.txt') { // 404
+        responseObj = { message: 'no encontre el txt' };
+        status = 404;
+    } else { // 500
         responseObj = { message: 'Internal server error' };
         status = 500;
     }
@@ -50,5 +60,5 @@ const server = http.createServer((request, response) => {
 
 server.listen(8080);
 
-console.log('API en node...');
-console.log('Esperando peticiones....');
+console.log('API en node...'.rainbow);
+console.log('Esperando peticiones....'.yellow);
