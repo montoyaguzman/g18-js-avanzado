@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 99",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "devf-montoyitag",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^2.0.20"
+    "node-dev": "^7.4.3",
+    "nodemon": "^2.0.20",
+    "supervisor": "^0.12.0"
   }
 }
