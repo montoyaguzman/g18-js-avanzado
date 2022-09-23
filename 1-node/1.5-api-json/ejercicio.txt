@@ -1,0 +1,2 @@
+1. Ejercicio 1.5 
+Convertir este proyecto en proyecto npm, van a agregar 2 comandos y 2 dependencias (nodemon y colors)

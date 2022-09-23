@@ -1,0 +1,2 @@
+1. Realizar el codigo de la ppt no. 3 de la presentacion de asincronia.
+2. Realizar ese mismo codigo cambiando el setTimeout por imprimir los numero de 0 a 10000000

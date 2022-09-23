@@ -18,10 +18,11 @@ const server = http.createServer((request, response) => {
     } else {
         fileSystemPath = `static${path}`;
     }
-
+    // fs.statSync
     fs.stat(fileSystemPath, error => {
         if (!error) {
             // OK
+            // fs.readFileSync
             fs.readFile(fileSystemPath, (error, file) => {
                 if (!error) {
                     const status = 200; // OK
