@@ -1,1 +1,8 @@
 Llamar a la pokeapi con fecth y controlar la asincronia con callbacks, promises (then/catch) y async await.
+
+Ejemplo de ejecucion
+
+console.log('1 loading informatyion..');
+// handleAsincronia (llamar a la api con fetch)
+console.log('2 pokemones: ', pokemones);
+console.log('3 final: ');
