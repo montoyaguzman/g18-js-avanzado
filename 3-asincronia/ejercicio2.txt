@@ -1,0 +1,1 @@
+Llamar a la pokeapi con fecth y controlar la asincronia con callbacks, promises (then/catch) y async await.
