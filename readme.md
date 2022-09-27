@@ -773,6 +773,7 @@ Big Data es un término que describe el gran volumen de datos, tanto estructurad
 * [Node.js para backend (en)](https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-backend).
 * [Mintlify Doc Writer](https://marketplace.visualstudio.com/items?itemName=mintlify.document).
 * [Metodo patito de goma](https://www.thebrain.school/metodo-patito-goma/#:~:text=Este%20m%C3%A9todo%2C%20incluso%20con%20entrada,pasaba%20inadvertido%20a%20sus%20ojos.).
+*  [Thubder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client).
 
 ### Glosario
 
