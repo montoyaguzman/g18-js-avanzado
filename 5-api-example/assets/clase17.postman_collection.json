@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "93cb6f55-c3e5-4a60-bc22-1269a1aba17c",
+		"name": "clase17",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3934865"
+	},
+	"item": [
+		{
+			"name": "getAllShoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shoes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getShoeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shoes/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createShoe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 7,\n    \"brand\": \"por el uno\",\n    \"price\": 2,\n    \"size\": 22\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shoes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editPartial",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"brand\": \"prasa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shoes/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoes",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editComplete",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 10,\n    \"brand\": \"niemblins\",\n    \"price\": 55,\n    \"size\": 29\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shoes/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoes",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteShoe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shoes/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoes",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
