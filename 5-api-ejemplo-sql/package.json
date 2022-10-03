@@ -1,0 +1,35 @@
+{
+  "name": "5-api-ejemplo-sql",
+  "version": "1.0.0",
+  "description": "API RESTful using Express and connected to data base (MySQL)",
+  "main": "index.js",
+  "scripts": {
+    "production": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon --exec npm run production src/index.js"
+  },
+  "keywords": [
+    "API",
+    "RESTful",
+    "Express",
+    "MySQL",
+    "Services",
+    "Controllers",
+    "Commons",
+    "Routes"
+  ],
+  "author": "Daniel Gloria",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "promise-mysql": "^5.2.0"
+  }
+}
