@@ -1,0 +1,3 @@
+1. Crear 2 funciones en un archivo modulos.js
+2. Las dos funciones deben poder ser utilizadas desde un archivo index.js
+3. Realizar un ejemplo con con common js (require y module.exports) y uno con es6 (export e import) con type module.

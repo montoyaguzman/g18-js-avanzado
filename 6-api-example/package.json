@@ -1,0 +1,19 @@
+{
+  "name": "shoes-api",
+  "version": "1.0.0",
+  "description": "Esta es mi primer api sobre shoes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "montoyaguzman7",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.19"
+  }
+}
